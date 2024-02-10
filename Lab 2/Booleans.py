@@ -1,6 +1,6 @@
 #1 Exercice
 print (10>9)
-#Ouput : "True"
+#Output : "True"
 
 #2 Exercise
 print (10 == 9)

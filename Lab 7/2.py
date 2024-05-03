@@ -12,9 +12,9 @@ time = datetime.datetime.now()
 angle = -(int(time.strftime("%S")) * 6) - 6
 angleM = -(int(time.strftime("%M")) * 6 + (int(time.strftime("%S")) * 6 / 60)) - 54
 
-background = pygame.image.load('C:\pictures.png')
-second = pygame.image.load('C:\pictures.png')
-minute = pygame.image.load('C:\pictures.png')
+background = pygame.image.load('C:\pictures\mickey.png')
+second = pygame.image.load('C:\pictures\seconds.png')
+minute = pygame.image.load('C:\pictures\minutes.png')
 
 
 def rotate(image, rect, angle):

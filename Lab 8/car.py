@@ -12,13 +12,13 @@ Red = (255, 0, 0)
 White = (255, 255, 255)
 Black = (0, 0, 0)
 
-street = pygame.image.load('street.png')
+street = pygame.image.load('C:\pictures\street.png')
 font = pygame.font.Font(None, 28)
 
 class Enemy(pygame.sprite.Sprite):
     def __init__(self, y):
         super().__init__()
-        self.image = pygame.image.load('enemy.png')
+        self.image = pygame.image.load('C:\pictures\enemy.png')
         self.rect = self.image.get_rect()
         self.rect.topleft = (random.randint(25, 350), y)
     
@@ -30,7 +30,7 @@ class Enemy(pygame.sprite.Sprite):
 class Player(pygame.sprite.Sprite):
     def __init__ (self):
         super().__init__()
-        self.image = pygame.image.load('player.png')
+        self.image = pygame.image.load('C:\pictures\player.png')
         self.rect = self.image.get_rect()
         self.rect.center = (160, 500)
     
@@ -45,7 +45,7 @@ class Player(pygame.sprite.Sprite):
 class Coin(pygame.sprite.Sprite):
     def __init__(self):
         super().__init__()
-        self.image = pygame.image.load('coin.png')
+        self.image = pygame.image.load('C:\pictures\coin.png')
         self.rect = self.image.get_rect()
         self.rect.topleft = (random.randint(25, 350), -500)
 

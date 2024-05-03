@@ -12,13 +12,13 @@ Red = (255, 0, 0)
 White = (255, 255, 255)
 Black = (0, 0, 0)
 
-street = pygame.image.load('street.png')
+street = pygame.image.load('C:\pictures\street.png')
 font = pygame.font.Font(None, 28)
 
 class Enemy(pygame.sprite.Sprite):
     def __init__(self, y):
         super().__init__()
-        self.image = pygame.image.load('enemy.png')
+        self.image = pygame.image.load('C:\pictures\enemy.png')
         self.rect = self.image.get_rect()
         self.rect.topleft = (random.randint(25, 350), y)
     
@@ -30,7 +30,7 @@ class Enemy(pygame.sprite.Sprite):
 class Player(pygame.sprite.Sprite):
     def __init__ (self):
         super().__init__()
-        self.image = pygame.image.load('player.png')
+        self.image = pygame.image.load('C:\pictures\player.png')
         self.rect = self.image.get_rect()
         self.rect.center = (160, 500)
     
@@ -69,8 +69,8 @@ def get_high_score():
 P = Player() 
 E1 = Enemy(-400)
 E2 = Enemy(-100)
-coin = Coin(-500, 'silver_coin.png')
-coin2 = Coin(-1000, 'coin.png')
+coin = Coin(-500, 'C:\pictures\silver_coin.png')
+coin2 = Coin(-1000, 'C:\pictures\coin.png')
 
 coins = pygame.sprite.Group()
 coins.add(coin)
@@ -102,8 +102,8 @@ while not done:
             P = Player() 
             E1 = Enemy(-400)
             E2 = Enemy(-100)
-            coin = Coin(-500, 'silver_coin.png')
-            coin2 = Coin(-1000, 'coin.png')
+            coin = Coin(-500, 'C:\pictures\silver_coin.png')
+            coin2 = Coin(-1000, 'C:\pictures\coin.png')
 
             coins = pygame.sprite.Group()
             coins.add(coin)
@@ -142,7 +142,7 @@ while not done:
         for entity in all_entities:
             entity.kill()
 
-        death_screen = pygame.image.load('you_died.png')
+        death_screen = pygame.image.load('C:\pictures\you_died.png')
         screen.blit(death_screen, (0, 0))
 
         text = font.render("Your score: " + str(score), True, White)
